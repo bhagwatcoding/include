@@ -17,7 +17,7 @@ let slider_width = (slide.length - 1) * innerWidth;
 // for prev button
 prev.addEventListener('click', () => {
     show(-innerWidth);
-    if (scroller.scrollLeft === 0) {
+    if (scroller.scrollLeft == 0) {
         setTimeout(() => {
             scroller.scrollLeft = slider_width;
             show(-innerWidth);
@@ -27,7 +27,7 @@ prev.addEventListener('click', () => {
 
 next.addEventListener('click', () => {
     show(innerWidth);
-    if (scroller.scrollLeft === slider_width) {
+    if (scroller.scrollLeft == slider_width) {
         setTimeout(() => {
             scroller.scrollLeft = 0;
             show(innerWidth);

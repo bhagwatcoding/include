@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+ :root {
+    --gap: 10px;
+    --white: #ffffff;
+    --dark: #000000;
+    --pink: #ff0080;
+    --border: 1px solid var(--pink);
+}
+
+tab .body::-webkit-scrollbar {
+    width: 7px;
+}
+
+tab .body::-webkit-scrollbar-track {
+    background: #e0e0e094;
+}
+
+tab .body::-webkit-scrollbar-thumb {
+    background: #c7c7c7ca;
+    border-radius: var(--gap);
+}
+
+tab {
+    margin: 2rem auto;
+    max-width: 650px;
+    display: grid;
+    padding: 1rem 2rem;
+    background-color: var(--white);
+    border-radius: 10px;
+    gap: var(--gap);
+    box-shadow: 0 0 8px #d1d1d1;
+    text-transform: capitalize;
+}
+
+tab .head {
+    text-align: center;
+    color: var(--pink);
+}
+
+tab .nav {
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-bottom: var(--border);
+}
+
+tab nav {
+    min-width: 400px;
+    display: flex;
+    gap: var(--gap);
+}
+
+tab nav button {
+    text-align: left;
+    width: 25%;
+    cursor: pointer;
+    padding: 10px 8px;
+    border: none;
+    background-color: var(--white);
+    color: var(--pink);
+    position: relative;
+    font-weight: bold;
+}
+
+tab nav button span,
+tab nav .active-tab::after {
+    background: var(--pink);
+    border-radius: 5px 5px 0 0;
+    bottom: 0;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transition: .8s ease;
+}
+
+tab nav button span {
+    width: 0;
+}
+
+tab button:hover span {
+    width: 100%;
+}
+
+tab nav .active-tab::after {
+    content: '';
+    width: 100%;
+}
+
+tab .body {
+    line-height: 1.8rem;
+    padding-top: 0.5rem;
+}
+
+tab .body .post {
+    grid-template: 2fr 1fr/ 1fr;
+    font-size: 0.9rem;
+}
+
+tab .body .post button {
+    border-radius: 5px;
+    padding: var(--gap);
+    border: 4px solid var(--pink);
+    transition: 1s;
+    background-color: var(--white);
+    color: var(--pink);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+tab .body .post button:hover {
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+@media screen and (max-width:650px) {
+    tab {
+        margin: 1rem;
+        font-size: 0.7rem;
+    }
+    tab nav {
+        width: 520px;
+        display: grid;
+        grid-template: 1fr/repeat(4, auto);
+        padding-bottom: 1px;
+    }
+    tab nav button {
+        width: max-content;
+        font-size: 0.7rem;
+    }
+    tab .body .post {
+        font-size: 0.7rem;
+    }
+    tab .body .post button {
+        font-size: 0.7rem;
+        padding: 0.5rem;
+    }
+    tab .body {
+        line-height: 1.3rem;
+    }
+}

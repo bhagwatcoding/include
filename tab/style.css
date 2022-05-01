@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --gap: 10px;
+    --white: #ffffff;
+    --dark: #000000;
+    --blw: #000fff;
+    --border: 1px solid var(--blw);
+}
+
+tab .body::-webkit-scrollbar {
+    width: 7px;
+}
+
+tab .body::-webkit-scrollbar-track {
+    background: #e0e0e094;
+}
+
+tab .body::-webkit-scrollbar-thumb {
+    background: #c7c7c7ca;
+    border-radius: var(--gap);
+}
+
+tab {
+    margin: auto;
+    max-width: 1000px;
+    border: var(--border);
+    display: grid;
+    padding: var(--gap);
+    background-color: aliceblue;
+}
+
+tab .head {
+    text-align: center;
+    margin-bottom: var(--gap);
+    color: var(--blw);
+}
+
+tab .nav {
+    display: flex;
+    height: 42px;
+    gap: 1rem;
+}
+
+tab .nav button {
+    display: flex;
+    width: 20%;
+    height: min-content;
+    text-align: left;
+    cursor: pointer;
+    padding: 8px;
+    border: var(--border);
+    text-transform: capitalize;
+    background-color: var(--white);
+    color: var(--blw);
+    font-size: 15px;
+}
+
+tab .nav .active-tab {
+    color: var(--dark);
+    background-color: var(--white);
+    height: 43px;
+    z-index: 1;
+    border: var(--border);
+    border-bottom: none;
+}
+
+tab .nav button:hover:not(.active-tab) {
+    background-color: var(--blw);
+    color: var(--white);
+}
+
+tab .body {
+    line-height: 1.5rem;
+    height: 550px;
+    padding: var(--gap);
+    border: var(--border);
+    background-color: var(--white);
+    overflow-x: hidden;
+    overflow-y: auto;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <link rel="stylesheet" type="text/css" href="https://www.begusarailive.in/master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <style>
+        .mxw,
+        .drop-uli>.top,
+        .drop-uli>.down {
+            margin: auto;
+            max-width: 600px;
+            padding: 0.3rem 0.5rem;
+        }
+        
+        .drop-uli>.top {
+            border-top: var(--border);
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            font-weight: bold;
+        }
+        
+        .drop-uli>.top>span:last-child {
+            background-image: url('data:image/svg+xml,\00003csvg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\00003cpath fill="%2370757a" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">\00003c/path>\00003c/svg>');
+            height: 24px;
+            width: 24px;
+        }
+        
+        .drop-uli>.down {
+            display: none;
+            font-weight: normal;
+        }
+        
+        .drop-uli>.down ul,
+        .drop-uli>.down ol {
+            margin-left: 1rem;
+        }
+    </style>
+
+    <div class="grid gap">
+        <div class="mxw">
+            <h1>People also ask</h1>
+        </div>
+        <div class="drop-uli">
+            <div class="top">
+                <span>What are CSS frameworks?</span>
+                <span></span>
+            </div>
+            <div class="down">
+                <ol>
+                    <li><a href="">Please follow me</a></li>
+                    <li>How can I check my Axis Bank credit card application status?</li>
+                    <li>मैं अपना एक्सिस बैंक क्रेडिट कार्ड एप्लीकेशन स्टेटस कैसे चेक कर सकता हूं?</li>
+                    <li>How do I check credit card status?</li>
+                    <li>How to get flipkart Axis Bank credit card status?</li>
+                </ol>
+            </div>
+        </div>
+        <div class="drop-uli">
+            <div class="top">
+                <span>Top 20 Best CSS Frameworks for Front-End Developers in 2023</span>
+                <span></span>
+            </div>
+            <div class="down">
+                <ul class="grid gap col-2">
+                    <li>css frameworks</li>
+                    <li>css framework examples</li>
+                    <li>best css framework 2023</li>
+                    <li>css frameworks 2023</li>
+                    <li>css frameworks w3schools</li>
+                    <li>best css framework for react</li>
+                    <li>tailwind css</li>
+                    <li>foundation css</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="drop-uli">
+            <div class="top">
+                <span>10 Best Application list</span>
+                <span></span>
+            </div>
+            <div class="down scroller">
+                <div class="flex gap">
+                    <div class="grid gap tac">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABQODxkbGR0aGx4hISAiKjAhIRwnHTssLiovPkBMP09ARkVVTmdXRVV5SkNGWH1ZYWtvdXZ1TlqBjYJximdydXABFRcXHxoeOyEiOXBRRU59cHx9cH18cHd1fXV1dnBwfX11cHJ6fXBwcHBwfXV9dnB0cHV5d31ycH1wcHB9cH1wcP/AABEIAFwAXAMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQUGBAMCB//EAD0QAAEDAgIDCgsJAQAAAAAAAAEAAgMEEQUhBhJREzRBYXFzkZKxwRQWIjFTcoGTstHhFTJCUmJjoeLwJP/EABkBAAIDAQAAAAAAAAAAAAAAAAIDAAEEBf/EACIRAAMAAgIBBQEBAAAAAAAAAAABAgMRBDESEyEyM1FhFP/aAAwDAQACEQMRAD8At8exZ0NoYvvkXLvyhZiSR7zd7nOO1xuu3HSfDJuVvwhcC7nGxTGNNds245SkIihaQwiKFCgiIoUFCIoUe9NWTQuDo3ltuC+R9i2WGYg2ohEnmdfVcNhCwykSubkCQs2fjzlX4wKhUWGNG9ZNyjsC4V61cu6TSv4HPcRyXXinY1qEhi9kgveio5Kh5jjtrButmbZf4rwVxotvp3Nu7Woc1OIdIqnpbPnxbq/2+v8ARPFur/b6/wBFocVrzTRboG6/lBttayp/Gp3oB73+qwxm5GRblISqt9HHJo/WNFw1ruJr/mq2WNzHFr2lrh52uFlqKHSKOV4ZIwxlxsDrawXZitA2oiLbDXAux2wolyskV45UX6lJ6oxCKEXRGhQVKKyj7REVBhXGi++nc27taqZXGi++nc27takcj6qAv4stNKN6j1296ya3lXSRzs1JBcXva9lx+L9H6M+8d81h4/JjFHjQmLUrRkYo3Pc1jBdzjYLeyytjY57jYNFyV401BBDcxRtadvD0ql0gFY5ubQIBmdR1+tkqyZFybS6RG/NmfJvc8Jz71CIusOCIihD7UL6e0tJafODY9i+VAwrjRjfTubd2tVOrfRjfTubPa1I5H1MC/iy10lJFKCCR5bfN7VlN0f8Amd1itTpMf+Ueu3vWTuNqVw0vTAx9HRBWzxG7JXjiLrjoWww6r8IgZIQATk4cYyWLhgklOrGxzzxBbLDKUwQMiObhm620pXMUJLXYOTRlsXpRDUPY3Jp8to2AriVjj8wfVvtmGAM9qrltwtvGthroIihMLO/FmatXOP1k9Oa41YY7v2blHwhV6Xie4l/xBT0grLR+eOKoLpHBoLCLuPDcKsRXcecuWU1taNr9qUnp4+so+1KT00fWWKRZP8M/ov00bR+L0jRczMPJmqvENIgQWU4Nzlurha3IPms+iKOHjl7fuRQkERFsDIS6KCrIXWklMWVJk/DIAQeMZKoX6BVUsc7Nzkbdp/hYvFKRkEhYwkj9Sw8TOrlQ+0Djva0caIoW0YERFCgiIoUFCIoQK5wvAPCId1eS25Ibxjb03X1gOFwz2fJrG34b5HvWrYwWAAsBkANi5/K5Th+MdirvXsj/2Q=="
+                            alt="Botstrap">
+                        <span>Boostrap</span>
+                    </div>
+                    <div class="grid gap tac">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABQODxkbGR0aGx4hISAiKjAhIRwnHTssLiovPkBMP09ARkVVTmdXRVV5SkNGWH1ZYWtvdXZ1TlqBjYJximdydXABFRcXHxoeOyEiOXBRRU59cHx9cH18cHd1fXV1dnBwfX11cHJ6fXBwcHBwfXV9dnB0cHV5d31ycH1wcHB9cH1wcP/AABEIAFwAXAMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQUGBAMCB//EAD0QAAEDAgIDCgsJAQAAAAAAAAEAAgMEEQUhBhJREzRBYXFzkZKxwRQWIjFTcoGTstHhFTJCUmJjoeLwJP/EABkBAAIDAQAAAAAAAAAAAAAAAAIDAAEEBf/EACIRAAMAAgIBBQEBAAAAAAAAAAABAgMRBDESEyEyM1FhFP/aAAwDAQACEQMRAD8At8exZ0NoYvvkXLvyhZiSR7zd7nOO1xuu3HSfDJuVvwhcC7nGxTGNNds245SkIihaQwiKFCgiIoUFCIoUe9NWTQuDo3ltuC+R9i2WGYg2ohEnmdfVcNhCwykSubkCQs2fjzlX4wKhUWGNG9ZNyjsC4V61cu6TSv4HPcRyXXinY1qEhi9kgveio5Kh5jjtrButmbZf4rwVxotvp3Nu7Woc1OIdIqnpbPnxbq/2+v8ARPFur/b6/wBFocVrzTRboG6/lBttayp/Gp3oB73+qwxm5GRblISqt9HHJo/WNFw1ruJr/mq2WNzHFr2lrh52uFlqKHSKOV4ZIwxlxsDrawXZitA2oiLbDXAux2wolyskV45UX6lJ6oxCKEXRGhQVKKyj7REVBhXGi++nc27taqZXGi++nc27takcj6qAv4stNKN6j1296ya3lXSRzs1JBcXva9lx+L9H6M+8d81h4/JjFHjQmLUrRkYo3Pc1jBdzjYLeyytjY57jYNFyV401BBDcxRtadvD0ql0gFY5ubQIBmdR1+tkqyZFybS6RG/NmfJvc8Jz71CIusOCIihD7UL6e0tJafODY9i+VAwrjRjfTubd2tVOrfRjfTubPa1I5H1MC/iy10lJFKCCR5bfN7VlN0f8Amd1itTpMf+Ueu3vWTuNqVw0vTAx9HRBWzxG7JXjiLrjoWww6r8IgZIQATk4cYyWLhgklOrGxzzxBbLDKUwQMiObhm620pXMUJLXYOTRlsXpRDUPY3Jp8to2AriVjj8wfVvtmGAM9qrltwtvGthroIihMLO/FmatXOP1k9Oa41YY7v2blHwhV6Xie4l/xBT0grLR+eOKoLpHBoLCLuPDcKsRXcecuWU1taNr9qUnp4+so+1KT00fWWKRZP8M/ov00bR+L0jRczMPJmqvENIgQWU4Nzlurha3IPms+iKOHjl7fuRQkERFsDIS6KCrIXWklMWVJk/DIAQeMZKoX6BVUsc7Nzkbdp/hYvFKRkEhYwkj9Sw8TOrlQ+0Djva0caIoW0YERFCgiIoUFCIoQK5wvAPCId1eS25Ibxjb03X1gOFwz2fJrG34b5HvWrYwWAAsBkANi5/K5Th+MdirvXsj/2Q=="
+                            alt="Botstrap">
+                        <span>Boostrap</span>
+                    </div>
+
+                    <div class="grid gap tac">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABQODxkbGR0aGx4hISAiKjAhIRwnHTssLiovPkBMP09ARkVVTmdXRVV5SkNGWH1ZYWtvdXZ1TlqBjYJximdydXABFRcXHxoeOyEiOXBRRU59cHx9cH18cHd1fXV1dnBwfX11cHJ6fXBwcHBwfXV9dnB0cHV5d31ycH1wcHB9cH1wcP/AABEIAFwAXAMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQUGBAMCB//EAD0QAAEDAgIDCgsJAQAAAAAAAAEAAgMEEQUhBhJREzRBYXFzkZKxwRQWIjFTcoGTstHhFTJCUmJjoeLwJP/EABkBAAIDAQAAAAAAAAAAAAAAAAIDAAEEBf/EACIRAAMAAgIBBQEBAAAAAAAAAAABAgMRBDESEyEyM1FhFP/aAAwDAQACEQMRAD8At8exZ0NoYvvkXLvyhZiSR7zd7nOO1xuu3HSfDJuVvwhcC7nGxTGNNds245SkIihaQwiKFCgiIoUFCIoUe9NWTQuDo3ltuC+R9i2WGYg2ohEnmdfVcNhCwykSubkCQs2fjzlX4wKhUWGNG9ZNyjsC4V61cu6TSv4HPcRyXXinY1qEhi9kgveio5Kh5jjtrButmbZf4rwVxotvp3Nu7Woc1OIdIqnpbPnxbq/2+v8ARPFur/b6/wBFocVrzTRboG6/lBttayp/Gp3oB73+qwxm5GRblISqt9HHJo/WNFw1ruJr/mq2WNzHFr2lrh52uFlqKHSKOV4ZIwxlxsDrawXZitA2oiLbDXAux2wolyskV45UX6lJ6oxCKEXRGhQVKKyj7REVBhXGi++nc27taqZXGi++nc27takcj6qAv4stNKN6j1296ya3lXSRzs1JBcXva9lx+L9H6M+8d81h4/JjFHjQmLUrRkYo3Pc1jBdzjYLeyytjY57jYNFyV401BBDcxRtadvD0ql0gFY5ubQIBmdR1+tkqyZFybS6RG/NmfJvc8Jz71CIusOCIihD7UL6e0tJafODY9i+VAwrjRjfTubd2tVOrfRjfTubPa1I5H1MC/iy10lJFKCCR5bfN7VlN0f8Amd1itTpMf+Ueu3vWTuNqVw0vTAx9HRBWzxG7JXjiLrjoWww6r8IgZIQATk4cYyWLhgklOrGxzzxBbLDKUwQMiObhm620pXMUJLXYOTRlsXpRDUPY3Jp8to2AriVjj8wfVvtmGAM9qrltwtvGthroIihMLO/FmatXOP1k9Oa41YY7v2blHwhV6Xie4l/xBT0grLR+eOKoLpHBoLCLuPDcKsRXcecuWU1taNr9qUnp4+so+1KT00fWWKRZP8M/ov00bR+L0jRczMPJmqvENIgQWU4Nzlurha3IPms+iKOHjl7fuRQkERFsDIS6KCrIXWklMWVJk/DIAQeMZKoX6BVUsc7Nzkbdp/hYvFKRkEhYwkj9Sw8TOrlQ+0Djva0caIoW0YERFCgiIoUFCIoQK5wvAPCId1eS25Ibxjb03X1gOFwz2fJrG34b5HvWrYwWAAsBkANi5/K5Th+MdirvXsj/2Q=="
+                            alt="Botstrap">
+                        <span>Boostrap</span>
+                    </div>
+
+                    <div class="grid gap tac">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABQODxkbGR0aGx4hISAiKjAhIRwnHTssLiovPkBMP09ARkVVTmdXRVV5SkNGWH1ZYWtvdXZ1TlqBjYJximdydXABFRcXHxoeOyEiOXBRRU59cHx9cH18cHd1fXV1dnBwfX11cHJ6fXBwcHBwfXV9dnB0cHV5d31ycH1wcHB9cH1wcP/AABEIAFwAXAMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQUGBAMCB//EAD0QAAEDAgIDCgsJAQAAAAAAAAEAAgMEEQUhBhJREzRBYXFzkZKxwRQWIjFTcoGTstHhFTJCUmJjoeLwJP/EABkBAAIDAQAAAAAAAAAAAAAAAAIDAAEEBf/EACIRAAMAAgIBBQEBAAAAAAAAAAABAgMRBDESEyEyM1FhFP/aAAwDAQACEQMRAD8At8exZ0NoYvvkXLvyhZiSR7zd7nOO1xuu3HSfDJuVvwhcC7nGxTGNNds245SkIihaQwiKFCgiIoUFCIoUe9NWTQuDo3ltuC+R9i2WGYg2ohEnmdfVcNhCwykSubkCQs2fjzlX4wKhUWGNG9ZNyjsC4V61cu6TSv4HPcRyXXinY1qEhi9kgveio5Kh5jjtrButmbZf4rwVxotvp3Nu7Woc1OIdIqnpbPnxbq/2+v8ARPFur/b6/wBFocVrzTRboG6/lBttayp/Gp3oB73+qwxm5GRblISqt9HHJo/WNFw1ruJr/mq2WNzHFr2lrh52uFlqKHSKOV4ZIwxlxsDrawXZitA2oiLbDXAux2wolyskV45UX6lJ6oxCKEXRGhQVKKyj7REVBhXGi++nc27taqZXGi++nc27takcj6qAv4stNKN6j1296ya3lXSRzs1JBcXva9lx+L9H6M+8d81h4/JjFHjQmLUrRkYo3Pc1jBdzjYLeyytjY57jYNFyV401BBDcxRtadvD0ql0gFY5ubQIBmdR1+tkqyZFybS6RG/NmfJvc8Jz71CIusOCIihD7UL6e0tJafODY9i+VAwrjRjfTubd2tVOrfRjfTubPa1I5H1MC/iy10lJFKCCR5bfN7VlN0f8Amd1itTpMf+Ueu3vWTuNqVw0vTAx9HRBWzxG7JXjiLrjoWww6r8IgZIQATk4cYyWLhgklOrGxzzxBbLDKUwQMiObhm620pXMUJLXYOTRlsXpRDUPY3Jp8to2AriVjj8wfVvtmGAM9qrltwtvGthroIihMLO/FmatXOP1k9Oa41YY7v2blHwhV6Xie4l/xBT0grLR+eOKoLpHBoLCLuPDcKsRXcecuWU1taNr9qUnp4+so+1KT00fWWKRZP8M/ov00bR+L0jRczMPJmqvENIgQWU4Nzlurha3IPms+iKOHjl7fuRQkERFsDIS6KCrIXWklMWVJk/DIAQeMZKoX6BVUsc7Nzkbdp/hYvFKRkEhYwkj9Sw8TOrlQ+0Djva0caIoW0YERFCgiIoUFCIoQK5wvAPCId1eS25Ibxjb03X1gOFwz2fJrG34b5HvWrYwWAAsBkANi5/K5Th+MdirvXsj/2Q=="
+                            alt="Botstrap">
+                        <span>Boostrap</span>
+                    </div>
+
+                    <div class="grid gap tac">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABQODxkbGR0aGx4hISAiKjAhIRwnHTssLiovPkBMP09ARkVVTmdXRVV5SkNGWH1ZYWtvdXZ1TlqBjYJximdydXABFRcXHxoeOyEiOXBRRU59cHx9cH18cHd1fXV1dnBwfX11cHJ6fXBwcHBwfXV9dnB0cHV5d31ycH1wcHB9cH1wcP/AABEIAFwAXAMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQUGBAMCB//EAD0QAAEDAgIDCgsJAQAAAAAAAAEAAgMEEQUhBhJREzRBYXFzkZKxwRQWIjFTcoGTstHhFTJCUmJjoeLwJP/EABkBAAIDAQAAAAAAAAAAAAAAAAIDAAEEBf/EACIRAAMAAgIBBQEBAAAAAAAAAAABAgMRBDESEyEyM1FhFP/aAAwDAQACEQMRAD8At8exZ0NoYvvkXLvyhZiSR7zd7nOO1xuu3HSfDJuVvwhcC7nGxTGNNds245SkIihaQwiKFCgiIoUFCIoUe9NWTQuDo3ltuC+R9i2WGYg2ohEnmdfVcNhCwykSubkCQs2fjzlX4wKhUWGNG9ZNyjsC4V61cu6TSv4HPcRyXXinY1qEhi9kgveio5Kh5jjtrButmbZf4rwVxotvp3Nu7Woc1OIdIqnpbPnxbq/2+v8ARPFur/b6/wBFocVrzTRboG6/lBttayp/Gp3oB73+qwxm5GRblISqt9HHJo/WNFw1ruJr/mq2WNzHFr2lrh52uFlqKHSKOV4ZIwxlxsDrawXZitA2oiLbDXAux2wolyskV45UX6lJ6oxCKEXRGhQVKKyj7REVBhXGi++nc27taqZXGi++nc27takcj6qAv4stNKN6j1296ya3lXSRzs1JBcXva9lx+L9H6M+8d81h4/JjFHjQmLUrRkYo3Pc1jBdzjYLeyytjY57jYNFyV401BBDcxRtadvD0ql0gFY5ubQIBmdR1+tkqyZFybS6RG/NmfJvc8Jz71CIusOCIihD7UL6e0tJafODY9i+VAwrjRjfTubd2tVOrfRjfTubPa1I5H1MC/iy10lJFKCCR5bfN7VlN0f8Amd1itTpMf+Ueu3vWTuNqVw0vTAx9HRBWzxG7JXjiLrjoWww6r8IgZIQATk4cYyWLhgklOrGxzzxBbLDKUwQMiObhm620pXMUJLXYOTRlsXpRDUPY3Jp8to2AriVjj8wfVvtmGAM9qrltwtvGthroIihMLO/FmatXOP1k9Oa41YY7v2blHwhV6Xie4l/xBT0grLR+eOKoLpHBoLCLuPDcKsRXcecuWU1taNr9qUnp4+so+1KT00fWWKRZP8M/ov00bR+L0jRczMPJmqvENIgQWU4Nzlurha3IPms+iKOHjl7fuRQkERFsDIS6KCrIXWklMWVJk/DIAQeMZKoX6BVUsc7Nzkbdp/hYvFKRkEhYwkj9Sw8TOrlQ+0Djva0caIoW0YERFCgiIoUFCIoQK5wvAPCId1eS25Ibxjb03X1gOFwz2fJrG34b5HvWrYwWAAsBkANi5/K5Th+MdirvXsj/2Q=="
+                            alt="Botstrap">
+                        <span>Boostrap</span>
+                    </div>
+
+                    <div class="grid gap tac">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABQODxkbGR0aGx4hISAiKjAhIRwnHTssLiovPkBMP09ARkVVTmdXRVV5SkNGWH1ZYWtvdXZ1TlqBjYJximdydXABFRcXHxoeOyEiOXBRRU59cHx9cH18cHd1fXV1dnBwfX11cHJ6fXBwcHBwfXV9dnB0cHV5d31ycH1wcHB9cH1wcP/AABEIAFwAXAMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQUGBAMCB//EAD0QAAEDAgIDCgsJAQAAAAAAAAEAAgMEEQUhBhJREzRBYXFzkZKxwRQWIjFTcoGTstHhFTJCUmJjoeLwJP/EABkBAAIDAQAAAAAAAAAAAAAAAAIDAAEEBf/EACIRAAMAAgIBBQEBAAAAAAAAAAABAgMRBDESEyEyM1FhFP/aAAwDAQACEQMRAD8At8exZ0NoYvvkXLvyhZiSR7zd7nOO1xuu3HSfDJuVvwhcC7nGxTGNNds245SkIihaQwiKFCgiIoUFCIoUe9NWTQuDo3ltuC+R9i2WGYg2ohEnmdfVcNhCwykSubkCQs2fjzlX4wKhUWGNG9ZNyjsC4V61cu6TSv4HPcRyXXinY1qEhi9kgveio5Kh5jjtrButmbZf4rwVxotvp3Nu7Woc1OIdIqnpbPnxbq/2+v8ARPFur/b6/wBFocVrzTRboG6/lBttayp/Gp3oB73+qwxm5GRblISqt9HHJo/WNFw1ruJr/mq2WNzHFr2lrh52uFlqKHSKOV4ZIwxlxsDrawXZitA2oiLbDXAux2wolyskV45UX6lJ6oxCKEXRGhQVKKyj7REVBhXGi++nc27taqZXGi++nc27takcj6qAv4stNKN6j1296ya3lXSRzs1JBcXva9lx+L9H6M+8d81h4/JjFHjQmLUrRkYo3Pc1jBdzjYLeyytjY57jYNFyV401BBDcxRtadvD0ql0gFY5ubQIBmdR1+tkqyZFybS6RG/NmfJvc8Jz71CIusOCIihD7UL6e0tJafODY9i+VAwrjRjfTubd2tVOrfRjfTubPa1I5H1MC/iy10lJFKCCR5bfN7VlN0f8Amd1itTpMf+Ueu3vWTuNqVw0vTAx9HRBWzxG7JXjiLrjoWww6r8IgZIQATk4cYyWLhgklOrGxzzxBbLDKUwQMiObhm620pXMUJLXYOTRlsXpRDUPY3Jp8to2AriVjj8wfVvtmGAM9qrltwtvGthroIihMLO/FmatXOP1k9Oa41YY7v2blHwhV6Xie4l/xBT0grLR+eOKoLpHBoLCLuPDcKsRXcecuWU1taNr9qUnp4+so+1KT00fWWKRZP8M/ov00bR+L0jRczMPJmqvENIgQWU4Nzlurha3IPms+iKOHjl7fuRQkERFsDIS6KCrIXWklMWVJk/DIAQeMZKoX6BVUsc7Nzkbdp/hYvFKRkEhYwkj9Sw8TOrlQ+0Djva0caIoW0YERFCgiIoUFCIoQK5wvAPCId1eS25Ibxjb03X1gOFwz2fJrG34b5HvWrYwWAAsBkANi5/K5Th+MdirvXsj/2Q=="
+                            alt="Botstrap">
+                        <span>Boostrap</span>
+                    </div>
+
+                    <div class="grid gap tac">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABQODxkbGR0aGx4hISAiKjAhIRwnHTssLiovPkBMP09ARkVVTmdXRVV5SkNGWH1ZYWtvdXZ1TlqBjYJximdydXABFRcXHxoeOyEiOXBRRU59cHx9cH18cHd1fXV1dnBwfX11cHJ6fXBwcHBwfXV9dnB0cHV5d31ycH1wcHB9cH1wcP/AABEIAFwAXAMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAQUGBAMCB//EAD0QAAEDAgIDCgsJAQAAAAAAAAEAAgMEEQUhBhJREzRBYXFzkZKxwRQWIjFTcoGTstHhFTJCUmJjoeLwJP/EABkBAAIDAQAAAAAAAAAAAAAAAAIDAAEEBf/EACIRAAMAAgIBBQEBAAAAAAAAAAABAgMRBDESEyEyM1FhFP/aAAwDAQACEQMRAD8At8exZ0NoYvvkXLvyhZiSR7zd7nOO1xuu3HSfDJuVvwhcC7nGxTGNNds245SkIihaQwiKFCgiIoUFCIoUe9NWTQuDo3ltuC+R9i2WGYg2ohEnmdfVcNhCwykSubkCQs2fjzlX4wKhUWGNG9ZNyjsC4V61cu6TSv4HPcRyXXinY1qEhi9kgveio5Kh5jjtrButmbZf4rwVxotvp3Nu7Woc1OIdIqnpbPnxbq/2+v8ARPFur/b6/wBFocVrzTRboG6/lBttayp/Gp3oB73+qwxm5GRblISqt9HHJo/WNFw1ruJr/mq2WNzHFr2lrh52uFlqKHSKOV4ZIwxlxsDrawXZitA2oiLbDXAux2wolyskV45UX6lJ6oxCKEXRGhQVKKyj7REVBhXGi++nc27taqZXGi++nc27takcj6qAv4stNKN6j1296ya3lXSRzs1JBcXva9lx+L9H6M+8d81h4/JjFHjQmLUrRkYo3Pc1jBdzjYLeyytjY57jYNFyV401BBDcxRtadvD0ql0gFY5ubQIBmdR1+tkqyZFybS6RG/NmfJvc8Jz71CIusOCIihD7UL6e0tJafODY9i+VAwrjRjfTubd2tVOrfRjfTubPa1I5H1MC/iy10lJFKCCR5bfN7VlN0f8Amd1itTpMf+Ueu3vWTuNqVw0vTAx9HRBWzxG7JXjiLrjoWww6r8IgZIQATk4cYyWLhgklOrGxzzxBbLDKUwQMiObhm620pXMUJLXYOTRlsXpRDUPY3Jp8to2AriVjj8wfVvtmGAM9qrltwtvGthroIihMLO/FmatXOP1k9Oa41YY7v2blHwhV6Xie4l/xBT0grLR+eOKoLpHBoLCLuPDcKsRXcecuWU1taNr9qUnp4+so+1KT00fWWKRZP8M/ov00bR+L0jRczMPJmqvENIgQWU4Nzlurha3IPms+iKOHjl7fuRQkERFsDIS6KCrIXWklMWVJk/DIAQeMZKoX6BVUsc7Nzkbdp/hYvFKRkEhYwkj9Sw8TOrlQ+0Djva0caIoW0YERFCgiIoUFCIoQK5wvAPCId1eS25Ibxjb03X1gOFwz2fJrG34b5HvWrYwWAAsBkANi5/K5Th+MdirvXsj/2Q=="
+                            alt="Botstrap">
+                        <span>Boostrap</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        let dropUli = $('.drop-uli');
+        dropUli.each((i) => {
+            let dropBtn = dropUli.children('.top').eq(i)
+            let time = 'fast'
+            dropBtn.click(() => {
+                let dropHide = dropUli.children('.down').eq(i);
+                // If else condition by handal open and close
+                let trs = 'transform 0.2s linear'
+
+                if (dropHide.css('display') == 'none') {
+                    dropHide.slideDown(time);
+                    dropBtn.children('span').eq(-1).css({
+                        'transition': trs,
+                        'transform': 'rotate(-180deg)'
+                    })
+                } else {
+                    dropHide.slideUp(time);
+                    dropBtn.children('span').eq(-1).css({
+                        'transition': trs,
+                        'transform': 'rotate(0deg)'
+                    })
+                }
+            })
+        })
+    </script>
+</body>
+
+</html>
